@@ -1,8 +1,8 @@
 name: swift_chat
 description: A highly customizable and easy-to-use chat UI package for Flutter. It provides a complete chat screen designed to be powered by a real-time backend like WebSockets.
-version: 1.1.2 # Updated version
-homepage: https://github.com/your_username/swift_chat # TODO: Change to your actual repository URL
-repository: https://github.com/your_username/swift_chat # Recommended for pub.dev score
+version: 1.1.3
+homepage: https://github.com/febin52/swift-chat
+repository: https://github.com/febin52/swift-chat
 
 environment:
   sdk: '>=3.0.0 <4.0.0' # Updated for Dart 3 and newer

@@ -53,10 +53,9 @@ class _MessageComposerState extends State<MessageComposer> {
         color: widget.theme.composerBackgroundColor,
         boxShadow: [
           BoxShadow(
-            offset: const Offset(0, -1),
-            blurRadius: 4,
-            color: Colors.black.withValues(alpha: 0.05)
-          ),
+              offset: const Offset(0, -1),
+              blurRadius: 4,
+              color: Colors.black.withValues(alpha: 0.05)),
         ],
       ),
       child: SafeArea(
