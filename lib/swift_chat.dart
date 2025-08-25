@@ -17,6 +17,9 @@ class SwiftChat extends StatefulWidget {
   final List<ChatMessage> messages;
   final void Function(String) onSend;
   final SwiftChatTheme theme;
+  /// An optional callback to trigger a file attachment flow.
+  /// If provided, an attach file button will be displayed.
+  final VoidCallback? onAttachFile;
 
   const SwiftChat({
     super.key,
@@ -24,6 +27,7 @@ class SwiftChat extends StatefulWidget {
     required this.messages,
     required this.onSend,
     this.theme = const SwiftChatTheme(),
+    this.onAttachFile,
   });
 
   @override
@@ -90,13 +94,14 @@ class _SwiftChatState extends State<SwiftChat> {
         MessageComposer(
           onSend: widget.onSend,
           theme: widget.theme,
+          onAttachFile: widget.onAttachFile,
         ),
       ],
     );
   }
 }
 
-/// A class to hold theme data for the `SwiftChat` widget.
+// SwiftChatTheme remains unchanged
 class SwiftChatTheme {
   final Color backgroundColor;
   final Color primaryBubbleColor;
